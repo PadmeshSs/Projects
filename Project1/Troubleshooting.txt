@@ -1,0 +1,19 @@
+TROUBLE SHOOTING: (relative to project 1)
+
+1. move aston packaging iso.... to the right of the screen: float-end
+2. move logo to right: float-start
+3. nav width 100%: move the entire code outside container
+4. bg color of navbar collapse didnt change: delete bg-*** from class of nav collapse
+5. move nav collapse to right: add navbar-brand classed element under the nav collapse
+6. make nav collapse on devices smaller than md: navbar-expand-md
+7. stop nav collapse to move to right when screen size gets smaller: dont apply any margin, padding, border to .navbar class directly
+8. dropdrown menu doesnt work: copy and paste js link from introduction segment of the booststrap website
+9. override bootstrap css: use id attribute in the element and apply changes to it
+10. hovering over dropmenu items css apply only when hover on hr: target specifically the a element
+11. cant override bootstrap css text color for active link: set the element focus state to the desired color 
+12. cant figure out the breakpoints mechanics: refer breakpoints from bootstrap
+13. collapsable navbar doesnt collapse - properly read general docs from bootstrap
+14. consecutive border adds up eg: if a border bottom of a element is 1px and border top of another elemnt is 1px, it adds upto 2px which is not needed: set margin: -x px (x=desired value)
+15. the backgorund color of icon bar in navbarcollapse to change color: change the rgb values in the bg url
+16. navbar toogler has black border around it: set navbar toggler focus's box shadow to none
+17. the dropdown menu 'product' changes its color to black when inspected: set the dropdown menu in show state's visited color to white

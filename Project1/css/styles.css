@@ -1,0 +1,223 @@
+/* START OF HEADER */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header-nav {
+    padding: 4px 0px 0px 0px;
+}
+
+/* Shiny effect for h2 and h5 */
+h5{
+	color: #FFAA00; /* Original color for h5 */
+	position: relative; /* Ensure relative positioning for pseudo-element */
+    overflow: hidden; /* Hide the overflow of the shine effect */
+}
+
+h2{
+    color: #01534C; /* Original color for h2 */
+    position: relative; /* Ensure relative positioning for pseudo-element */
+    overflow: hidden; /* Hide the overflow of the shine effect */
+}
+
+h2::before, h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start the shine effect off-screen */
+    width: 200%; /* Ensure the shine covers the whole element */
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+/* Other styles for the header */
+hr {
+    margin: 0px;
+}
+
+.navbar-header {
+    width: 100%;
+}
+
+#nav-stretch {
+    width: 100%;
+    background: #01534C;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+div #nav-link {
+    margin-right: 23px;
+    padding: 8px 0px;
+    letter-spacing: 1px;
+}
+
+.nav-link, #navbar-stretch .nav-link.show:active, #nav-stretch a.nav-link.show:focus, #nav-stretch a.nav-link.show:visited, .nav-link:active, .nav-link:focus {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #FFAA00;
+    transition: color 0.5s ease;
+}
+
+.dropdown-item a {
+    line-height: 24px;
+    font-size: 15px;
+    color: #7c7b7b;
+}
+
+.dropdown-item a:hover {
+    background: #FFAA00;
+}
+
+.dropdown-menu {
+    border: 2px solid #FFAA00;
+    border-radius: 0px;
+    width: 250px;
+    padding: 0px;
+}
+
+.dropdown-item {
+    color: #7c7b7b;
+}
+
+.dropdown-divider {
+    opacity: 0.5;
+    margin: 0px;
+}
+
+#dropdownli:hover a {
+    color: white;
+    background: #FFAA00;
+    transition: all 0.5s ease;
+}
+
+.dropdown-item {
+    padding: 15px;
+}
+
+.active {
+    color: #FFAA00;
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+    border: 1px solid white;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#navbarTogglerDemo02, .dropdown-menu {
+    transition: width 0.5s ease, background 0.5s ease, margin 0.5s ease;
+}
+/*END OF HEADER*/
+
+
+/* LARGE DEVICES ONLY */
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .nav-link{
+    	animation: slideInRight 0.5s ease-in-out;
+    }
+
+}
+
+/* MEDIUM DEVICES ONLY */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0px;
+    }
+
+    .nav-link{
+    	animation: slideInRight 0.5s ease-in-out;
+    }
+
+    #nav-holder {
+        text-align: left;
+    }
+
+    #nav-stretch #nav-link {
+        font-size: .9em;
+        font-weight: 500;
+        font-size: 12px;
+        margin-right: 21px;
+
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* SMALL DEVICES ONLY */
+@media (max-width: 767px) {
+
+	.nav-link{
+    	animation: slideInRight 0.5s ease-in-out;
+    }
+
+    div #nav-link {
+        background: #2c2c2c;
+        padding: 10px;
+        border: 1px solid #fff;
+        margin-bottom: -1px;
+        width: 100%;
+    }
+
+    #navbarTogglerDemo02 {
+        margin-top: 15px;
+    }
+
+    li .dropdown-menu {
+    	width: 100%;
+        background: #2c2c2c;
+        border: 1px solid white;
+        margin-bottom: 1px;
+        margin-right: -23px;
+    }
+
+    .dropdown-item{
+        color: white;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+	hr {
+	    border: none;              
+	    border-top: 1px solid #FFFFFF; 
+	    height: 0;                 
+	}
+
+}
