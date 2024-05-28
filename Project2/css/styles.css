@@ -235,6 +235,10 @@ div #offcanvasNavbar{
         margin-top: 60px;
     }
 
+    #content{
+        margin-top: 0px;
+    }
+
 }
 
 /* EX-SMALL DEVICES ONLY */
