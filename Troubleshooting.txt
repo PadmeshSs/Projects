@@ -17,3 +17,4 @@ TROUBLE SHOOTING: (relative to project 1)
 15. the backgorund color of icon bar in navbarcollapse to change color: change the rgb values in the bg url
 16. navbar toogler has black border around it: set navbar toggler focus's box shadow to none
 17. the dropdown menu 'product' changes its color to black when inspected: set the dropdown menu in show state's visited color to white
+18. hr wont go down to the next line in a flex container: add flex-wrap bootstrap class to the hr container
