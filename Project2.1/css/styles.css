@@ -441,6 +441,7 @@ h2{
     }
 
     #content{
+        opacity: 0.5;
         background: url(../images/bg15.jpg);
         background-size: 100% 124%;
         background-position-y: -102px;
