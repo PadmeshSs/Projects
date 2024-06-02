@@ -134,17 +134,8 @@ h1, h2 {
     margin: 15px 0px;
 }
 
-img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50%;
-    max-width: none;
-}
-
 #content {
-  margin-top: 100px; 
-  height: calc(100vh - 100px); 
+  height: auto; 
   position: relative;
 }
 
@@ -163,6 +154,9 @@ img{
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     height: 187px;
     background: #292828;
 }
@@ -207,6 +201,41 @@ h2{
     }
 }
 
+#lg-img{
+    width: 101%;
+    height: 100%;
+}
+
+/* ABOUT PAGE */
+#header-about{
+    top: 5%;
+    left: 33%;
+}
+
+#head{
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#roster{
+    top: 23%;
+    left: 5%;
+    width: 67%;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background: white;
+}
+
+
+/* END OF ABOUT PAGE  */
+
+
+
+
+
 /* VERY LARGE DEVICES ONLY */
 @media (min-width: 1200px){
     .navbar-nav .nav-link::before {
@@ -233,11 +262,15 @@ h2{
 
     img{
         width: 100%;
-        height: 100%;
+        height: 130%;
     }
 
     #exp-btn{
         top: 135px;
+    }
+
+    .hidden{
+        display: none;
     }
 
 }
@@ -267,6 +300,10 @@ h2{
         left: 50%;
     }
 
+    #content{
+        margin-top: 6%;
+    }
+
     img{
         width: 100%;
         height: 100%;
@@ -274,6 +311,14 @@ h2{
 
     #exp-btn{
         top: 135px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    #md-img{
+        display: none;
     }
 
 }
@@ -317,12 +362,16 @@ h2{
 
     #md-img{
         display: block;
-        width: 100%;
+        width: 102%;
         height: 100%;
     }
 
     #exp-btn{
         top: 135px;
+    }
+
+    .hidden{
+        display: none;
     }
 
 }
@@ -360,10 +409,6 @@ h2{
         margin-top: 60px;
     }
 
-    #content{
-        height: calc(100vh - 287px);
-    }
-
     img{
         top: 44%;
     }
@@ -374,13 +419,18 @@ h2{
 
     #md-img{
         display: block;
-        width: 100%;
-        height: 111%;
+        width: 102%;
+        height: 100%;
     }
 
     #exp-btn{
         top: 135px;
     }
+
+    .hidden{
+        display: none;
+    }
+
 
 }
 
@@ -441,6 +491,22 @@ h2{
 
     #exp-btn{
         top: 135px;
+    }
+
+    .visible{
+        display: none;
+    }
+
+    .hidden{
+        display: inline;
+    }
+
+    #icons{
+        margin-right: 50px;
+    }
+
+    #copy{
+        margin-right: 45px;
     }
 
 }
