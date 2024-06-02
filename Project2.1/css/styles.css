@@ -65,15 +65,14 @@ h1, h2 {
     letter-spacing: 0.1em;
     font-weight: 400;
     padding: 10px 30px;
-    border: 2px solid white;
 }
 
 #exp-btn:hover{
-   background: var(--clr);
-   color:  var(--clr);
-   letter-spacing: 0.25em;
-   box-shadow: 0 0 35px var(--clr);
-   border: 0; 
+    background: var(--clr);
+    color:  var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+    border: 0; 
 }
 
 #exp-btn::before{
@@ -81,6 +80,11 @@ h1, h2 {
     position: absolute;
     inset: 2px;
     background: #27282c;
+    border: 2px solid white;
+}
+
+#exp-btn:hover::before{
+    border: 0;
 }
 
 #exp-btn span{
