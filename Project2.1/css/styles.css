@@ -414,7 +414,7 @@ h2{
     }
 
     #intro{
-        left: 43%;
+        left: 50%;
         margin-top: 70px;
         top: 40%;
         font-size: 39px;
@@ -440,19 +440,10 @@ h2{
         display: inline;
     }
 
-    #icons{
-        margin-right: 50px;
-    }
-
-    #copy{
-        margin-right: 45px;
-    }
-
     #content{
-        background: url(../images/bg14.jpg);
+        background: url(../images/bg15.jpg);
         background-size: 100% 124%;
         background-position-y: -102px;
     }
-
 
 }
