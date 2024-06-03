@@ -4,8 +4,8 @@ body {
     overflow-x: hidden;
 }
 
-#headernav {
-    background: #292828;
+#headernav, footer {
+    background: #2a2a2a;
 }
 
 .nav-align {
@@ -164,7 +164,6 @@ h1, h2 {
 
 footer {
     height: 187px;
-    background: #292828;
 }
 
 div #offcanvasNavbar{
