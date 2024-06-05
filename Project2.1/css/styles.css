@@ -139,12 +139,7 @@ h1, h2 {
 }
 
 #content {
-    background: url(../images/bg12.jpg);
-    background-size: 100% 119%;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    padding: 0;
-    height: 900px; 
+    padding: 10px;
     position: relative;
 }
 
@@ -153,16 +148,19 @@ h1, h2 {
     font-weight: 700;
 }
 
+.main-index{
+    height: 860px;
+}
+
 #intro {
+    margin-top: 20%;
   width: 100%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   padding: 20px;
-  border-radius: 10px;
   background: transparent;
 }
 
 footer {
+    margin-top: 5%;
     height: 187px;
 }
 
@@ -207,11 +205,13 @@ h2{
 }
 
 /*  About us */
+.main-about{
+    height: 1200px;
+}
+
 #meet{
     text-align: center;
-    width: 47%;
-    top: 6%;
-    left: 26%;
+    padding-top: 85px;
 }
 
 #head{
@@ -224,7 +224,17 @@ h2{
     font-size: 19px;
 }
 
-#item{
+.roster{
+    gap: 35px;
+    margin-top: 36px;
+    width: 57%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item{
+    border: 2px solid;
+    background-color: #2a2a2a;
     width: 300px;
     height: 300px;
 }
@@ -249,17 +259,28 @@ h2{
     }
 
     #intro{
-        font-size: 63px;
-        margin-top: -18px;
-        left: 50%;
+        margin-top: 13pc;
+        font-size: 95px;
     }
 
     #exp-btn{
+        font-size: 20px;
         top: 135px;
     }
 
     .hidden{
         display: none;
+    }
+
+    .main-about, .main-index{
+        background: url(../images/bg-xl-imagetoolspro.jpg);
+        background-position: center center;
+    }
+
+    .main-index{
+        margin-top: 5%;
+        height: 1027px;
+        background-position-y: 40%;
     }
 
 }
@@ -284,16 +305,30 @@ h2{
     }
 
     #intro{
-        font-size: 63px;
-        margin-top: 25px;
-        left: 50%;
+        font-size: 82px;
     }
     #exp-btn{
         top: 135px;
     }
-
+    
     .hidden{
         display: none;
+    }
+    
+    .main-about, .main-index{
+        background: url(../images/bg-xl-imagetoolspro.jpg);
+        background-position-x: 50%;
+        background-position-y: 22%;
+    }
+
+    .main-index{
+        margin-top: 5%;
+        background-position-y: 40%;
+        background-size: 132rem;
+    }
+
+    .roster{
+        width: 67%;
     }
 
 }
@@ -322,26 +357,36 @@ h2{
     }
 
     #intro{
-        font-size: 48px;
-        margin-top: 10px;
-        left: 50%;
+        margin-top: 25%;
+        font-size: 80px;
     }
 
     .hr{
         width: 90%;
     }
-
+    
     #exp-btn{
         top: 135px;
     }
-
+    
     .hidden{
         display: none;
     }
+    
+    .main-about, .main-index{
+        background: url(../images/bg-xl-imagetoolspro.jpg);
+        background-position-x: 50%;
+        background-position-y: 22%;
+    }
 
-    #content{
-        background-size: 100% 100%;
-        background-position-y: 80px;
+    .main-index{
+        margin-top: 5%;
+        background-size: 139rem;
+        background-position-y: 39%;
+    }
+
+    .roster{
+        width: 90%;
     }
 
 }
@@ -373,9 +418,8 @@ h2{
     }
 
     #intro{
-        top: 47%;
-        font-size: 40px;
-        left: 46%;
+        margin-top: 42%;
+        font-size: 60px;
     }
 
     #exp-btn{
@@ -386,10 +430,26 @@ h2{
         display: none;
     }
 
-    #content{
-        background: url(../images/bg14.jpg);
-        background-size: 100% 150%;
-        background-position-y: -180px;
+    .main-about, .main-index{
+        background: url(../images/bg-xl-imagetoolspro.jpg);
+        background-position-x: 50%;
+        background-position-y: 22%;
+    }
+
+    .main-index{
+        background-position-y: 40%;
+        margin-top: 5%;
+        background-size: 140rem;
+    }
+
+    .roster{
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .item{
+        width: 200px;
+        height: 200px;
     }
 
 }
@@ -417,10 +477,8 @@ h2{
     }
 
     #intro{
-        left: 50%;
-        margin-top: 70px;
-        top: 40%;
-        font-size: 39px;
+        font-size: 10vw;
+        margin-top: 13rem;
     }
 
     .ms-xs-5 {
@@ -432,7 +490,7 @@ h2{
     }
 
     #exp-btn{
-        top: 135px;
+        top: 26vw;
     }
 
     .visible{
@@ -443,11 +501,37 @@ h2{
         display: inline;
     }
 
-    #content{
-        opacity: 0.5;
-        background: url(../images/bg15.jpg);
-        background-size: 100% 124%;
-        background-position-y: -102px;
+    #meet{
+        padding: 85px 5px 0 5px;
+    }
+
+    .main-about, .main-index{
+        background: url(../images/bg-xl-imagetoolspro.jpg);
+        background-position-x: 50%;
+        background-position-y: 22%;
+    }
+
+    .main-index{
+        height: 750px;
+        background-size: 326vw;
+        background-position-y: 35%;
+    }
+
+    .item{
+        width: 200px;
+        height: 200px;
+    }
+
+    #head{
+        font-size: 34px;
+    }
+
+    #info{
+        font-size: 13px;
+    }
+
+    .main-about{
+        height: 1500px;
     }
 
 }
