@@ -149,6 +149,7 @@ h1, h2 {
 }
 
 .main-index{
+    margin-top: 5%;
     height: 860px;
 }
 
@@ -160,7 +161,7 @@ h1, h2 {
 }
 
 footer {
-    margin-top: 5%;
+    ;
     height: 187px;
 }
 
@@ -211,7 +212,7 @@ h2{
 
 #meet{
     text-align: center;
-    padding-top: 85px;
+    margin-top: 40px;
 }
 
 #head{
@@ -274,13 +275,12 @@ h2{
 
     .main-about, .main-index{
         background: url(../images/bg-xl-imagetoolspro.jpg);
-        background-position: center center;
-    }
-
-    .main-index{
-        margin-top: 5%;
-        height: 1027px;
         background-position-y: 40%;
+        background-position: center center;
+        }
+        
+    .main-index{
+        height: 1027px;
     }
 
 }
@@ -318,17 +318,12 @@ h2{
     .main-about, .main-index{
         background: url(../images/bg-xl-imagetoolspro.jpg);
         background-position-x: 50%;
-        background-position-y: 22%;
-    }
-
-    .main-index{
-        margin-top: 5%;
         background-position-y: 40%;
         background-size: 132rem;
     }
 
     .roster{
-        width: 67%;
+        width: 635px;
     }
 
 }
@@ -375,18 +370,13 @@ h2{
     
     .main-about, .main-index{
         background: url(../images/bg-xl-imagetoolspro.jpg);
-        background-position-x: 50%;
-        background-position-y: 22%;
-    }
-
-    .main-index{
-        margin-top: 5%;
         background-size: 139rem;
         background-position-y: 39%;
+        background-position-x: 50%;
     }
 
     .roster{
-        width: 90%;
+        width: 635px;
     }
 
 }
@@ -432,19 +422,17 @@ h2{
 
     .main-about, .main-index{
         background: url(../images/bg-xl-imagetoolspro.jpg);
+        background-position-y: 40%;
+        background-size: 140rem;
         background-position-x: 50%;
-        background-position-y: 22%;
     }
 
-    .main-index{
-        background-position-y: 40%;
-        margin-top: 5%;
-        background-size: 140rem;
+    .main-about{
+        height: 1090px;
     }
 
     .roster{
-        width: 100%;
-        margin-top: 20%;
+        width: 435px;
     }
 
     .item{
@@ -501,20 +489,17 @@ h2{
         display: inline;
     }
 
-    #meet{
-        padding: 85px 5px 0 5px;
-    }
-
     .main-about, .main-index{
         background: url(../images/bg-xl-imagetoolspro.jpg);
+        height: 750px;
+        background-size: 326vw;
+        background-repeat: no-repeat;
+        background-position-y: 35%;
         background-position-x: 50%;
-        background-position-y: 22%;
     }
 
     .main-index{
-        height: 750px;
-        background-size: 326vw;
-        background-position-y: 35%;
+        margin-top: 0;
     }
 
     .item{
@@ -531,7 +516,7 @@ h2{
     }
 
     .main-about{
-        height: 1500px;
+        height: 1375px;
     }
 
 }
