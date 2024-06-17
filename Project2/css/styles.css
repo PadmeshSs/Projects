@@ -1,7 +1,8 @@
 body{
     background: #0F1019;
+    color: white;
+    overflow-x: clip;
 }
-
 
 /* FONT STYLES*/
 .orbitron{
@@ -74,15 +75,11 @@ body{
 }
 
 .color{
-    color: #C43259;
-}
-
-.navbar{
-    margin: 0 90px;
+    color: #3EB489;
 }
 
 .offcanvas{
-    background: #252525;
+    background: #0F1019;
 }
 
 #offcanvasNavbar .btn-close{
@@ -111,11 +108,213 @@ body{
 
 
 
+/* CONTENT */
+#logo-content{
+    font-family: rechargebold;
+    font-size: 128px;
+    color: white;
+}
+
+.hero-section, .basic-info, .contact, footer{
+    margin-top: 5rem;
+}
+
+.logo-text{
+    font-size: 20px;
+    width: 504px;
+    margin-left: 5px;
+}
+
+.logo-image{
+    filter: saturate(1.2) hue-rotate(175deg) brightness(1.5);
+    top: -3%;
+    left: 61%;
+}
+
+.logo-image img{
+    width: 500px;
+    height: 596px;
+}
+
+#explore{
+    margin-top: 5%;
+    color: white;
+    background-color:#3EB489;
+    padding: 10px 15px 10px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+#explore::after{
+    content: '\f061';
+    font-family: fontAwesome;
+    position: relative;
+    left: -20px;
+    opacity: 0;
+    transition: .2s;
+}
+
+#explore:hover::after{
+    left: 10px;
+    opacity: 1;
+}
+
+#explore:hover{
+    padding: 10px 30px 10px 25px;
+}
+
+.center{
+    margin-top: 105px;
+    margin-left: 5px;
+}
+
+.basic-info{
+    height: 825px;
+}
+
+.hacker img{
+    width: 630px;
+    margin-top: 100px;
+    border-radius: 30px;
+    filter: saturate(1.2) hue-rotate(175deg) brightness(1.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section{
+    height: 555px;
+}
+
+.text:first-child{
+    margin-top: 102px;
+}
+
+.line{
+    padding: 0;
+    width: 5px;
+    height: 147px;
+    background: #00a0a0;
+    left: 55%;
+    top: 30%;
+}
+
+.gradient{
+    width: 183px;
+    height: 2167px;
+    transform: rotate(-73deg);
+    background: #3EB489;
+    filter: blur(100px);
+    left: 47%;
+    top: -90%;
+    z-index: -1;
+}
+
+.text{
+    width: 500px;
+    color: #989898;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.head{
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact{
+    height: 270px;
+    border: 5px solid transparent;
+}
+
+.contact-head{
+    font-size: 62px;
+}
+
+.contact-head .color{
+    font-family: rechargebold;
+}
+
+.contact .center{
+    margin-left: 0;
+    margin-top: 60px;
+}
+
+footer{
+    height: 270px;
+}
+
+#footer-logo{
+    width: 160px;
+    font-family: 'ethnocentricitalic';
+    color: white;
+    font-size: 75px;
+    letter-spacing: -21px;
+    line-height: normal;
+}
+
+.footer-gradient{
+    height: 2px;
+    background: radial-gradient(circle at center, white, #66b2b2, #3EB489, #006666, #004c4c);
+    width: 100%;
+}
+
+#footer-nav ul{
+    all: unset;
+    gap: 10rem;
+}
+
+#footer-nav .navlink{
+    text-decoration: none;
+    color: #989898;
+}
+
+#footer-nav .navlink:hover{
+    color: white;
+    transition: color .2s;
+}
+
+#footer-nav{
+    width: 100%;
+}
+
+.footer-last{
+    width: 100%;
+}
+
+.copy{
+    line-height: 40px;
+}
+
+.footer-last #links{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 2rem;
+    text-align: center;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+#links:hover{
+    color: #3EB489;
+    box-shadow: 0 0 30px#3EB489;
+}
+/* END OF CONTENT */
+
+
+
 
 
 
 /* MEDIA QUERIES */
-@media (min-width: 992px) {
+@media (min-width: 1400px){
     .nav-link {
         position: relative;
         display: inline-block;
@@ -129,7 +328,7 @@ body{
         bottom: 0;
         width: 0;
         height: 2px;
-        background-color: #C43259; /* Underline color */
+        background-color: #3EB489; /* Underline color */
         transition: width 0.4s, left 0.4s;
         color: white;
     }
@@ -137,7 +336,124 @@ body{
     #nav-body .nav-link:hover{
         color: white;
     }
+
+    #logo-content{
+        line-height: 128px;
+    }
 }
+
+@media (min-width: 1200px) and (max-width: 1399px){
+    .nav-link {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #3EB489; /* Underline color */
+        transition: width 0.4s, left 0.4s;
+        color: white;
+    }
+    
+    #nav-body .nav-link:hover{
+        color: white;
+    }
+
+    #logo-content{
+        font-size: 110px;
+        line-height: 128px;
+    }
+
+    .logo-image img{
+        width: 440px;
+        height: 540px;
+    }
+
+    .hacker img{
+        width: 545px;
+        height: 500px;
+    }
+
+    .head{
+        font-size: 22px;
+    }
+
+    .text{
+        width: 445px;
+        font-size: 18PX;
+    }
+
+    .contact-head{
+        font-size: 53px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .nav-link {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #3EB489; /* Underline color */
+        transition: width 0.4s, left 0.4s;
+        color: white;
+    }
+    
+    #nav-body .nav-link:hover{
+        color: white;
+    }
+
+    #logo-content{
+        font-size: 95px;
+        line-height: 100px;
+    }
+
+    .logo-image img {
+        width: 360px;
+        height: 460px;
+    }
+
+    .logo-image{
+        top: 0;
+    }
+
+    .hacker img {
+        width: 458px;
+        height: 460px;
+    }
+
+    .head{
+        font-size: 20px;
+    }
+
+    .text{
+        width: 350px;
+        font-size: 16PX;
+    }
+
+    .text:first-child{
+        margin-top: 50px;
+    }
+
+    .contact-head{
+        font-size: 44px;
+    }
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
     .nav-link {
@@ -153,7 +469,7 @@ body{
         bottom: 0;
         width: 0;
         height: 2px;
-        background-color: #C43259; /* Underline color */
+        background-color: #3EB489; /* Underline color */
         transition: width 0.4s, left 0.4s;
         color: white;
     }
@@ -162,19 +478,84 @@ body{
         color: white;
     }
 
-    .navbar .container-fluid{
-        flex-wrap: wrap;
-    }
-
     .nav-item:first-child #first{
         margin-left: 0;
     }
+
+    .hero-section, .basic-info, .contact, footer{
+        margin-top: 2rem;
+    }
+
+    #logo-content{
+        font-size: 65px;
+        line-height: 75px;
+    }
+
+    .logo-text{
+        font-size: 16px;
+        width: 380px;
+    }
+
+    .logo-image img {
+        width: 270px;
+        height: 370px;
+    }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .nav-link{
         margin-top: 35px;
-        background: linear-gradient(to right, #00ff00 50% , white 50%);
+        background: linear-gradient(to right, #3EB489 50% , white 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:  text;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .nav-link:hover{
+        background-position: 0 0;
+        transition: 0.7s ease-in;
+    }
+
+    .navbar{
+        height: 60px;
+        margin: 0 20px;
+    }
+
+    #nav-body .nav-link{
+        margin-left: 0;
+    }
+
+    ul .nav-item{
+        height: 60px;
+        transform: translateY(15%);
+    }
+
+    #logo, .offcanvas-title{
+        font-size: 25px;
+        letter-spacing: -5px;
+    }
+
+    .navbar-toggler, .navbar-toggler:focus{
+        border: 0;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon{
+        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3e%3cpath stroke='rgba%28196, 50, 89, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        transform: translateY(-3px) translateX(-2px);
+    }
+}
+
+@media (max-width: 575px){
+    .nav-link{
+        margin-top: 35px;
+        background: linear-gradient(to right, #3EB489 50% , white 50%);
         background-size: 200% 100%;
         background-position: 100% 0;
         -webkit-text-fill-color: transparent;
