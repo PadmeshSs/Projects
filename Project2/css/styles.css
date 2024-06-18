@@ -171,7 +171,7 @@ body{
 }
 
 .basic-info{
-    height: 825px;
+    height: 775px;
 }
 
 .hacker img{
@@ -206,7 +206,7 @@ body{
     background: #3EB489;
     filter: blur(100px);
     left: 47%;
-    top: -90%;
+    top: -100%;
     z-index: -1;
 }
 
@@ -392,6 +392,10 @@ footer{
     .contact-head{
         font-size: 53px;
     }
+
+    .basic-info{
+        height: 725px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -428,7 +432,7 @@ footer{
     }
 
     .logo-image{
-        top: 0;
+        top: 60px;
     }
 
     .hacker img {
@@ -451,6 +455,10 @@ footer{
 
     .contact-head{
         font-size: 44px;
+    }
+
+    .basic-info{
+        height: 675px;
     }
 }
 
@@ -482,10 +490,6 @@ footer{
         margin-left: 0;
     }
 
-    .hero-section, .basic-info, .contact, footer{
-        margin-top: 2rem;
-    }
-
     #logo-content{
         font-size: 65px;
         line-height: 75px;
@@ -497,8 +501,69 @@ footer{
     }
 
     .logo-image img {
-        width: 270px;
+        width: 295px;
         height: 370px;
+    }
+
+    .hero-section{
+        height: 390px;
+    }
+
+    .logo-image{
+        top: 1%;
+        left: 59%;
+    }
+
+    .hacker img {
+        width: 335px;
+        height: 304px;
+    }
+
+    .text{
+        font-size: 14px;
+        width: 366px;
+    }
+
+    .head{
+        font-size: 18px;
+    }
+    
+    .info{
+        text-align: center;
+        padding: 0;
+    }
+
+    .text{
+        margin-right: auto;
+    }
+
+    .basic-info {
+        height: 990px;
+    }
+
+    .line{
+        left: 50%;
+        top: 40%;
+        transform: rotate(90deg);
+    }
+
+    .gradient{
+        transform: rotate(-53deg);
+        left: 25%;
+        top: -64%;
+    }
+
+    .contact{
+        height: 205px;
+        margin-top: 5rem;
+    }
+
+    .contact-head{
+        font-size: 33px;
+    }
+
+    #footer-nav ul{
+        gap: 5rem;
     }
 }
 
@@ -550,6 +615,95 @@ footer{
         background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3e%3cpath stroke='rgba%28196, 50, 89, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         transform: translateY(-3px) translateX(-2px);
     }
+
+    #logo-content{
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .logo-text{
+        font-size: 14px;
+        width: 295px;
+    }
+
+    .logo-image img {
+        width: 230px;
+        height: 330px;
+    }
+
+    .hero-section{
+        height: 390px;
+    }
+
+    .logo-image{
+        top: 2%;
+        left: 57%;
+    }
+
+    .hacker img {
+        width: 335px;
+        height: 304px;
+    }
+
+    .text{
+        font-size: 12px;
+        width: 366px;
+    }
+
+    .head{
+        font-size: 16px;
+    }
+    
+    .info{
+        text-align: center;
+        padding: 0;
+    }
+
+    .text{
+        margin-right: auto;
+    }
+
+    .basic-info {
+        height: 990px;
+    }
+
+    .line{
+        left: 50%;
+        top: 40%;
+        transform: rotate(90deg);
+    }
+
+    .gradient{
+        transform: rotate(-53deg);
+        left: 25%;
+        top: -64%;
+    }
+
+    .contact{
+        height: 205px;
+        margin-top: 5rem;
+        font-size: 15px;
+    }
+
+    .contact-head{
+        font-size: 24px;
+    }
+
+    #footer-nav ul{
+        gap: 5rem;
+    }
+
+    .copy{
+        font-size: 14px;
+    }
+
+    #links:first-child{
+        margin-left: 0;
+    }
+
+    .footer-last #links{
+        margin-left: 1rem;
+    }
 }
 
 @media (max-width: 575px){
@@ -599,6 +753,95 @@ footer{
     .navbar-toggler-icon{
         background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3e%3cpath stroke='rgba%28196, 50, 89, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         transform: translateY(-3px) translateX(-2px);
+    }
+
+    #logo-content{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .logo-text{
+        font-size: 6px;
+        width: 295px;
+    }
+
+    .logo-image img {
+        width: 113px;
+        height: 150px;
+    }
+
+    .hero-section{
+        height: 390px;
+    }
+
+    .logo-image{
+        top: 2%;
+        left: 57%;
+    }
+
+    .hacker img {
+        width: 335px;
+        height: 304px;
+    }
+
+    .text{
+        font-size: 12px;
+        width: 366px;
+    }
+
+    .head{
+        font-size: 16px;
+    }
+    
+    .info{
+        text-align: center;
+        padding: 0;
+    }
+
+    .text{
+        margin-right: auto;
+    }
+
+    .basic-info {
+        height: 990px;
+    }
+
+    .line{
+        left: 50%;
+        top: 40%;
+        transform: rotate(90deg);
+    }
+
+    .gradient{
+        transform: rotate(-53deg);
+        left: 25%;
+        top: -64%;
+    }
+
+    .contact{
+        height: 205px;
+        margin-top: 5rem;
+        font-size: 15px;
+    }
+
+    .contact-head{
+        font-size: 24px;
+    }
+
+    #footer-nav ul{
+        gap: 5rem;
+    }
+
+    .copy{
+        font-size: 14px;
+    }
+
+    #links:first-child{
+        margin-left: 0;
+    }
+
+    .footer-last #links{
+        margin-left: 1rem;
     }
 }
 /* END OF MEDIA QUERIES */
