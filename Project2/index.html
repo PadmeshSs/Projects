@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oleo+Script:wght@400;700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ed6caf72a6.js" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
 </head>
 
 <body class="orbitron">
@@ -33,16 +34,16 @@
               <ul class="navbar-nav justify-content-md-center justify-content-lg-end flex-grow-1 pe-3">
                 <li class="nav-item"></li>
                 <li class="nav-item">
-                  <a class="nav-link" id="first" aria-current="page" href="#">Home</a>
+                  <a class="nav-link hid" id="first" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link hid" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link hid" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Achievements</a>
+                    <a class="nav-link hid" href="#">Achievements</a>
                 </li>
               </ul>
             </div>
@@ -54,57 +55,57 @@
   <!-- MAIN CONTENT -->
     <div class="container position-relative" id="content">
       <div class="hero-section d-flex flex-column flex-wrap justify-content-center">
-        <div id="logo-content">
+        <div id="logo-content" class="hid">
           BINARY <br>
           <span class="color">MISFITS</span>
         </div>
         <div class="logo-image position-absolute">
-          <img src="images/skull.png" alt="">
+          <img src="images/skull.png" alt="" class="img-fluid">
         </div>
-        <div class="logo-text">
+        <div class="logo-text hid">
           Welcome to Binary Misfits: Where code meets challenge and we conquer the impossible!
         </div>
         <div class="center">
-          <a href="" id="explore">
+          <a href="about.html" id="explore" class="hid explore">
             EXPLORE
           </a>
         </div>
       </div>
       <div class="basic-info row position-relative">
         <div class="hacker d-flex justify-content-center col-lg-6">
-          <img src="images/img.jpg" alt="" width="670" height="600">
+          <img src="images/img.jpg" class="hid" alt="" width="670" height="600" >
         </div>
         <div class="line position-absolute"></div>
         <div class="gradient position-absolute"></div>
         <div class="info col-lg-6">
-          <div class="text">
+          <div class="text hid">
             <div class="head">Web Exploitation Expert</div>
             Specializes in finding and exploiting vulnerabilities in web applications to improve their security.
           </div>
           <br>
-          <div class="text">
+          <div class="text hid">
             <div class="head">Penetration Tester</div>
             Conducts authorized simulated attacks on systems to identify security weaknesses and improve overall security defenses.
           </div>
           <br>
-          <div class="text">
+          <div class="text hid">
             <div class="head">Reverse Engineer Specialist</div>
             Dissects software to understand its design, functionality, and potential vulnerabilities for security analysis and improvements.
           </div>
           <br>
-          <div class="text">
+          <div class="text hid">
             <div class="head">Ethical Hacker</div>
             Uses hacking skills to identify, report, and fix security vulnerabilities, ensuring systems are secure from malicious attacks.
           </div>
         </div>
       </div>
       <div class="contact">
-        <div class="contact-info">
+        <div class="contact-info hid">
           <div class="contact-head">Collaborate with <span class="color">BINARY MISFITS</span>!</div> <br>
           Have questions or concerns? Contact us for assistance!
         </div>
         <div class="center position-absolute">
-          <a href="" id="explore">
+          <a href="emailto:" id="contact-us" class="hid explore">
             Contact us
           </a>
         </div>
@@ -121,16 +122,16 @@
     <div class="navbar-nav" id="footer-nav">
       <ul class="d-flex justify-content-center"> 
       <li id="nav-item">
-          <a class="navlink" id="first" aria-current="page" href="#">Home</a>
+          <a class="navlink hid" id="first" aria-current="page" href="index.html">Home</a>
         </li>
         <li id="nav-item">
-          <a class="navlink" href="#">About</a>
+          <a class="navlink hid" href="about.html">About</a>
         </li>
         <li id="nav-item">
-            <a class="navlink" href="#">Blog</a>
+            <a class="navlink hid" href="#">Blog</a>
         </li>
         <li id="nav-item">
-            <a class="navlink" href="#">Achievements</a>
+            <a class="navlink hid" href="#">Achievements</a>
         </li>
       </ul>
     </div>
@@ -138,16 +139,24 @@
       <div class="copy">
         &copy; 2024  <span class="color">Binary Misfits</span>. All rights reserved.
       </div>
-      <div class="ms-auto socials">
-        <a href="" id="links">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="" id="links">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="" id="links">
-          <i class="fa-brands fa-github"></i>
-        </a>
+      <div class="ms-sm-auto socials d-flex justify-content-center">
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          </li>
+          <li>
+            <a href="">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          </li>        
+        </ul>
       </div>
     </div>
    </footer>
