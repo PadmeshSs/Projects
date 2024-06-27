@@ -211,6 +211,7 @@ body{
     left: 47%;
     top: -100%;
     z-index: -1;
+    opacity: 0.6;
 }
 
 .text{
@@ -1192,7 +1193,7 @@ footer{
     }
 
     .contact-head{
-        font-size: 23px;
+        font-size: 4vw;
     }
 
     .contact .center{
