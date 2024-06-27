@@ -1,7 +1,11 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     background: #0F1019;
     color: white;
-    overflow-x: clip;
 }
 
 /* FONT STYLES*/
@@ -200,7 +204,7 @@ body{
 
 .gradient{
     width: 183px;
-    height: 2167px;
+    height: 135rem;
     transform: rotate(-73deg);
     background: #3EB489;
     filter: blur(100px);
