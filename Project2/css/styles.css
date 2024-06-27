@@ -1187,9 +1187,9 @@ footer{
     }
 
     .contact{
-        height: 205px;
+        height: 20vw;
         margin-top: 5rem;
-        font-size: 12px;
+        font-size: 2vw;
     }
 
     .contact-head{
